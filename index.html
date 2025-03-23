@@ -98,6 +98,49 @@
             border-radius: 5px;
         }
 
+/* FAQ Section */
+        .faq-section {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-section h2 {
+            text-align: center;
+            color: #211C84;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #ddd;
+        }
+
+        .faq-question {
+            width: 100%;
+            text-align: left;
+            background: #f4f4f4;
+            padding: 15px;
+            border: none;
+            outline: none;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .faq-question:hover {
+            background: #e0e0e0;
+        }
+
+        .faq-answer {
+            padding: 15px;
+            display: none;
+            background: white;
+            font-size: 16px;
+        }
+        
         /* Footer */
         footer {
             text-align: center;
@@ -199,6 +242,40 @@
         <a href="https://cosmofeed.com/payment-page" class="buy-btn">Buy Now</a>
     </section>
 
+<!-- FAQ Section -->
+    <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        
+        <div class="faq-item">
+            <button class="faq-question">What is included in the Mega Coding Bundle?</button>
+            <div class="faq-answer">
+                The bundle includes 20+ programming courses, 12 high-quality eBooks, and 6 handwritten notes from CS toppers.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">How will I receive the bundle?</button>
+            <div class="faq-answer">
+                Once you complete the payment, you will get an instant download link to access all the materials.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">Is there any refund policy?</button>
+            <div class="faq-answer">
+                Since this is a digital product, we do not offer refunds. Please check the details before purchasing.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">Is the bundle suitable for beginners?</button>
+            <div class="faq-answer">
+                Yes! The bundle covers courses from beginner to advanced levels, making it perfect for everyone.
+            </div>
+        </div>
+
+    </section>
+    
     <!-- Footer -->
     <footer>
         <p>© 2025 Your Brand Name. All rights reserved.</p>
@@ -220,5 +297,16 @@
         startCountdown(600);
     </script>
 
+<!-- FAQ Toggle Script -->
+    <script>
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', function () {
+                this.classList.toggle('active');
+                const answer = this.nextElementSibling;
+                answer.style.display = (answer.style.display === "block") ? "none" : "block";
+            });
+        });
+    </script>
+    
 </body>
 </html>
