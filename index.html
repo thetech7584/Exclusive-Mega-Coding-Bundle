@@ -73,55 +73,6 @@
             border-radius: 5px;
         }
 
-        /* Testimonials Section */
-    .testimonials {
-        text-align: center;
-        padding: 40px 20px;
-        background: #f4f4f4; 
-    }
-
-    .testimonials h2 {
-        color: #211C84;
-        margin-bottom: 20px;
-        font-size: 26px;
-    }
-
-    /* Responsive Grid */
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
-        gap: 15px;
-        max-width: 1200px;
-        margin: auto;
-        padding: 20px;
-    }
-
-    .grid-item {
-        background: white;
-        padding: 15px;
-        text-align: center;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease-in-out;
-    }
-
-    .grid-item:hover {
-        transform: scale(1.05);
-    }
-
-    .grid-item img {
-        width: 100%; /* Full width */
-        max-width: 100%; /* Prevent overflow */
-        height: auto; /* Maintain aspect ratio */
-        border-radius: 8px;
-    }
-
-    .grid-item p {
-        font-size: 16px;
-        font-weight: bold;
-        margin-top: 10px;
-        color: #333;
-    }
 
     /* Mobile Optimization */
     @media (max-width: 768px) {
@@ -295,8 +246,8 @@
 
 <!-- Testimonials Section -->
 <section class="testimonials">
-    <h2>What Our Customers Say</h2>
-    <div class="grid-container">
+    <h2 style="text-align:center; padding:20px;">What is our Customer Say's</h2>
+        <div class="grid-container">
         <div class="grid-item"><img src="screenshot1.jpg" alt="Testimonial 1"><p>Amit Sharma</p></div>
         <div class="grid-item"><img src="screenshot2.jpg" alt="Testimonial 2"><p>Neha Verma</p></div>
         <div class="grid-item"><img src="screenshot3.jpg" alt="Testimonial 3"><p>Rohit Singh</p></div>
